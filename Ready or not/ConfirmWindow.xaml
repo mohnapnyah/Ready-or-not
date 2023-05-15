@@ -1,0 +1,16 @@
+﻿<Window x:Class="Ready_or_not.ConfirmWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ready_or_not"
+        mc:Ignorable="d"
+        Title="Подтверждение выбора" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <WrapPanel HorizontalAlignment="Center" Margin="0,103,0,83" Width="130">
+            <Button IsDefault="True" Click="Accept_Click" MinWidth="60" Margin="0,0,10,0">Да</Button>
+            <Button IsCancel="True" MinWidth="60">Нет</Button>
+        </WrapPanel>
+        <TextBlock x:Name="ConfirmBlock" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Text="Ты выбираешь этот челендж?" Height="33"/>
+    </Grid>
+</Window>

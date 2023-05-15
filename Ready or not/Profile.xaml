@@ -1,0 +1,23 @@
+﻿<Window x:Class="Ready_or_not.Profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ready_or_not"
+        mc:Ignorable="d"
+        Title="Profile" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="userLogin" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Логин: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="Login" HorizontalAlignment="Left" Margin="73,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <DataGrid x:Name="userChallengeList" AutoGenerateColumns="True" Margin="0,131,0,0" Loaded="userChallengeList_Loaded" SelectionChanged="userChallengeList_SelectionChanged"/>
+        <TextBlock x:Name="yC" HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="Твои челенджи: " VerticalAlignment="Top" Width="107"/>
+        <TextBlock x:Name="Name1" Margin="0,16,0,0" TextWrapping="Wrap" Text="Имя: " VerticalAlignment="Top" RenderTransformOrigin="0.987,0.44" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="firstName" HorizontalAlignment="Left" Margin="73,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231"/>
+        <TextBlock x:Name="Surname" HorizontalAlignment="Left" Margin="0,32,0,0" TextWrapping="Wrap" Text="Фамилия: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="secondName" HorizontalAlignment="Left" Margin="73,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231"/>
+        <TextBlock x:Name="Email" HorizontalAlignment="Left" Margin="0,48,0,0" TextWrapping="Wrap" Text="Почта: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="EmailBox" HorizontalAlignment="Left" Margin="73,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231"/>
+        <TextBlock x:Name="nb" HorizontalAlignment="Left" Margin="0,64,0,0" TextWrapping="Wrap" Text="Телефон: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="73,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231"/>
+    </Grid>
+</Window>

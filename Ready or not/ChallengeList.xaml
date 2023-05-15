@@ -1,0 +1,14 @@
+﻿<Window x:Class="Ready_or_not.ChallengeList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ready_or_not"
+        mc:Ignorable="d"
+        Title="ChallengeList" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="challengeList" Margin="0,38,0,67" Loaded="challengeList_Loaded" SelectionChanged="challengeList_SelectionChanged"/>
+        <Button x:Name="Profile" Content="Мой профиль" HorizontalAlignment="Left" Margin="664,10,0,0" VerticalAlignment="Top" Width="126" Click="Profile_Click"/>
+
+    </Grid>
+</Window>
