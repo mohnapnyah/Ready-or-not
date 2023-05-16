@@ -48,11 +48,30 @@ namespace Ready_or_not
                 Challenge ch = ChallengeDB.FindChallengeByName(name);
                 currentUser.CompletedChallenges.Add(challenge);
                 currentUser.Challenges.Remove(ch);
+                currentUser.Points += challenge.Reward;
                 UsersDB.ReplaceUser(currentUser.Login, currentUser);
                 
             }
         }
 
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            currentUser = null;
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
 
+        private void completed_Click(object sender, RoutedEventArgs e)
+        {
+            CompletedChallenges completed = new CompletedChallenges(currentUser);
+            completed.Show();
+        }
+
+        private void sendCH_Click(object sender, RoutedEventArgs e)
+        {
+            SendCH send = new SendCH();
+            send.Show();
+        }
     }
 }

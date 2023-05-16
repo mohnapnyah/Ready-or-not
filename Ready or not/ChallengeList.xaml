@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ChallengeList" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="challengeList" Margin="0,38,0,67" Loaded="challengeList_Loaded" SelectionChanged="challengeList_SelectionChanged"/>
+        <DataGrid x:Name="challengeList" Margin="0,52,0,10" Loaded="challengeList_Loaded" SelectionChanged="challengeList_SelectionChanged"/>
         <Button x:Name="Profile" Content="Мой профиль" HorizontalAlignment="Left" Margin="664,10,0,0" VerticalAlignment="Top" Width="126" Click="Profile_Click"/>
 
     </Grid>

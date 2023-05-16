@@ -23,19 +23,13 @@ namespace Ready_or_not
         public User user;
         public ChallengeList(User currentUser)
         {
-           user = currentUser;
+            user = currentUser;
             InitializeComponent();
         }
 
         private void challengeList_Loaded(object sender, RoutedEventArgs e)
         {
-            List<Challenge> chList = new List<Challenge>();
-            Challenge Yamakasi = new Challenge("Ямакаси", "Сделать манки-флип", 3, 500);
-            Challenge naMasse = new Challenge("На массе","Сделать подъем-переворот", 1 , 100);
-            chList.Add(Yamakasi);
-            chList.Add(naMasse);
-            
-            challengeList.ItemsSource = chList;
+            challengeList.ItemsSource = ChallengeDB.FindAllChallenges();
         }
 
         private void Profile_Click(object sender, RoutedEventArgs e)

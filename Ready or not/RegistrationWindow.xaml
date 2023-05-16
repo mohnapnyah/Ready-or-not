@@ -6,24 +6,48 @@
         xmlns:local="clr-namespace:Ready_or_not"
         mc:Ignorable="d"
         Title="RegistrationWindow" Height="350" Width="270">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="CustomButtonStyle">
+            <Setter Property="Background" Value="Green"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Green"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="5"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Red"/>
+                    <Setter Property="BorderBrush" Value="Red"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="CustomText">
+            <Setter Property="Foreground" Value="#FFFF3100" ></Setter>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/maxresdefault.jpg"/>
+            <ImageBrush/>
         </Grid.Background>
-        <TextBox x:Name="Login" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="0,16,0,0"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,150,0,0" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top" Width="98"/>
-        <TextBox x:Name="Number" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="0,166,0,0"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Почта" VerticalAlignment="Top" Margin="0,189,0,0"/>
-        <TextBox x:Name="Email" HorizontalAlignment="Center" Margin="0,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="Reg" Content="Регистрация" HorizontalAlignment="Center" Margin="0,228,0,0" VerticalAlignment="Top" Click="Reg_Click"/>
-        <Button x:Name="Clear" Content="Очистить" HorizontalAlignment="Center" Margin="0,253,0,0" VerticalAlignment="Top" Click="Clear_Click"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Пароль"/>
-        <PasswordBox x:Name="Password" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Name" HorizontalAlignment="Center" Margin="0,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,73,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top"/>
-        <TextBox x:Name="Фамилия" HorizontalAlignment="Center" Margin="0,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="Surname" HorizontalAlignment="Center" Margin="0,111,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top"/>
+
+        <TextBox BorderThickness="2" x:Name="Login" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="0,24,0,0" BorderBrush="#FF96FF00"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Style="{StaticResource CustomText}" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top" Width="50" Margin="0,164,0,0"  Style="{StaticResource CustomText}" Height="21"/>
+        <TextBox BorderThickness="2" x:Name="Number" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="0,185,0,0" BorderBrush="#FF96FF00"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Почта" VerticalAlignment="Top" Margin="0,208,0,0"  Style="{StaticResource CustomText}"/>
+        <TextBox BorderThickness="2"  x:Name="Email" HorizontalAlignment="Center" Margin="0,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FF96FF00"/>
+        <Button x:Name="Reg" Content="Регистрация" HorizontalAlignment="Center" Margin="0,252,0,0" VerticalAlignment="Top" Click="Reg_Click" Style="{StaticResource CustomButtonStyle}" Background="#FF96FF00" FontFamily="Comic Sans MS" FontWeight="Bold" />
+        <Button x:Name="Clear" Content="Очистить" HorizontalAlignment="Center" Margin="0,291,0,0" VerticalAlignment="Top" Click="Clear_Click" Style="{StaticResource CustomButtonStyle}" Background="#FFFF0011" FontFamily="Comic Sans MS">
+        </Button>
+        <TextBlock HorizontalAlignment="Center" Margin="0,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Пароль"  Style="{StaticResource CustomText}"/>
+        <PasswordBox BorderThickness="2" x:Name="Password" HorizontalAlignment="Center" Margin="0,63,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF96FF00"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Center" Margin="0,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FF96FF00"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,81,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top"  Style="{StaticResource CustomText}"/>
+        <TextBox BorderThickness="2" x:Name="Фамилия" HorizontalAlignment="Center" Margin="0,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FF96FF00"/>
+        <TextBlock x:Name="Surname" HorizontalAlignment="Center" Margin="0,120,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top"  Style="{StaticResource CustomText}"/>
 
 
     </Grid>

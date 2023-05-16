@@ -7,17 +7,20 @@
         mc:Ignorable="d"
         Title="Profile" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="userLogin" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Логин: " VerticalAlignment="Top"/>
-        <TextBlock x:Name="Login" HorizontalAlignment="Left" Margin="73,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
-        <DataGrid x:Name="userChallengeList" AutoGenerateColumns="True" Margin="0,131,0,0" Loaded="userChallengeList_Loaded" SelectionChanged="userChallengeList_SelectionChanged"/>
-        <TextBlock x:Name="yC" HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="Твои челенджи: " VerticalAlignment="Top" Width="107"/>
-        <TextBlock x:Name="Name1" Margin="0,16,0,0" TextWrapping="Wrap" Text="Имя: " VerticalAlignment="Top" RenderTransformOrigin="0.987,0.44" HorizontalAlignment="Left"/>
-        <TextBlock x:Name="firstName" HorizontalAlignment="Left" Margin="73,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231"/>
-        <TextBlock x:Name="Surname" HorizontalAlignment="Left" Margin="0,32,0,0" TextWrapping="Wrap" Text="Фамилия: " VerticalAlignment="Top"/>
-        <TextBlock x:Name="secondName" HorizontalAlignment="Left" Margin="73,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231"/>
-        <TextBlock x:Name="Email" HorizontalAlignment="Left" Margin="0,48,0,0" TextWrapping="Wrap" Text="Почта: " VerticalAlignment="Top"/>
-        <TextBlock x:Name="EmailBox" HorizontalAlignment="Left" Margin="73,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231"/>
-        <TextBlock x:Name="nb" HorizontalAlignment="Left" Margin="0,64,0,0" TextWrapping="Wrap" Text="Телефон: " VerticalAlignment="Top"/>
-        <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="73,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231"/>
+        <TextBlock x:Name="userLogin" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Логин: " VerticalAlignment="Top" Style="{StaticResource CustomText}"/>
+        <TextBlock x:Name="Login" HorizontalAlignment="Left" Margin="73,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Style="{StaticResource CustomText}"/>
+        <DataGrid x:Name="userChallengeList" AutoGenerateColumns="True" Margin="0,116,0,100" Loaded="userChallengeList_Loaded" SelectionChanged="userChallengeList_SelectionChanged"/>
+        <TextBlock x:Name="yC" HorizontalAlignment="Left" Margin="5,95,0,0" TextWrapping="Wrap" Text="Твои челенджи: " VerticalAlignment="Top" Width="185" Style="{StaticResource CustomText}"/>
+        <TextBlock x:Name="Name1" Margin="0,16,0,0" TextWrapping="Wrap" Text="Имя: " VerticalAlignment="Top" RenderTransformOrigin="0.987,0.44" HorizontalAlignment="Left" Style="{StaticResource CustomText}"/>
+        <TextBlock x:Name="firstName" HorizontalAlignment="Left" Margin="73,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231" Style="{StaticResource CustomText}"/>
+        <TextBlock x:Name="Surname" HorizontalAlignment="Left" Margin="0,32,0,0" TextWrapping="Wrap" Text="Фамилия: " VerticalAlignment="Top" Style="{StaticResource CustomText}"/>
+        <TextBlock x:Name="secondName" HorizontalAlignment="Left" Margin="73,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231" Style="{StaticResource CustomText}"/>
+        <TextBlock x:Name="Email" HorizontalAlignment="Left" Margin="0,48,0,0" TextWrapping="Wrap" Text="Почта: " VerticalAlignment="Top" Style="{StaticResource CustomText}"/>
+        <TextBlock x:Name="EmailBox" HorizontalAlignment="Left" Margin="73,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231" Style="{StaticResource CustomText}"/>
+        <TextBlock x:Name="nb" HorizontalAlignment="Left" Margin="0,64,0,0" TextWrapping="Wrap" Text="Телефон: " VerticalAlignment="Top" Style="{StaticResource CustomText}"/>
+        <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="73,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.593,0.231" Style="{StaticResource CustomText}"/>
+        <Button x:Name="Exit" Content="Выход из аккаунта" HorizontalAlignment="Left" Margin="645,71,0,0" VerticalAlignment="Top" Click="Exit_Click"/>
+        <Button x:Name="sendCH" Content="Брось вызов другим" HorizontalAlignment="Center" Margin="0,369,0,0" VerticalAlignment="Top" Width="252" Click="sendCH_Click"/>
+        <Button x:Name="completed" Content="Твои заслуги!" HorizontalAlignment="Left" Margin="663,10,0,0" VerticalAlignment="Top" Width="125" Click="completed_Click"/>
     </Grid>
 </Window>

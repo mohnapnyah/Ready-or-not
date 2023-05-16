@@ -1,0 +1,23 @@
+﻿<Window x:Class="Ready_or_not.SendCH"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ready_or_not"
+        mc:Ignorable="d"
+        Title="SendCH" Height="400" Width="280">
+    <Grid>
+        <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Center" Margin="0,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Брось вызов другим!" Width="144"/>
+        <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Center" Margin="0,88,0,0" TextWrapping="Wrap" Text="Назови челендж!" VerticalAlignment="Top" RenderTransformOrigin="0.203,0.316"/>
+        <TextBox BorderThickness="2" x:Name="Name" HorizontalAlignment="Left" Margin="72,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" BorderBrush="#FF96FF00"/>
+        <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Center" Margin="0,132,0,0" TextWrapping="Wrap" Text="Опиши его суть!" VerticalAlignment="Top" RenderTransformOrigin="0.203,0.316"/>
+        <TextBox BorderThickness="2" x:Name="desc" HorizontalAlignment="Center" Margin="0,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" BorderBrush="#FF96FF00"/>
+        <TextBox BorderThickness="2" x:Name="dif" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Margin="72,197,0,0" BorderBrush="#FF96FF00"/>
+        <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Left" Margin="58,176,0,0" TextWrapping="Wrap" Text="Какая у него сложность?" VerticalAlignment="Top" RenderTransformOrigin="0.203,0.316" Height="16" Width="168"/>
+        <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Center" Margin="0,215,0,0" TextWrapping="Wrap" Text="Награда" VerticalAlignment="Top" RenderTransformOrigin="0.203,0.316"/>
+        <TextBox BorderThickness="2" x:Name="reward" HorizontalAlignment="Left" Margin="72,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" BorderBrush="#FF96FF00"/>
+        <Button x:Name="send" Content="Отправить челендж" HorizontalAlignment="Center" Margin="0,293,0,0" VerticalAlignment="Top" Width="170" Click="send_Click"/>
+
+
+    </Grid>
+</Window>

@@ -23,6 +23,7 @@ namespace Ready_or_not
         private string surname;
         private string patronymic;
         private List<Challenge> completedChallenges;
+        private int points;
 
 
         public User(string login, string password, string number, string email, string name, string surname)
@@ -46,5 +47,6 @@ namespace Ready_or_not
         public string Surname { get => surname; set => surname = value; }
         public string Patronymic { get => patronymic; set => patronymic = value; }
         public List<Challenge> CompletedChallenges { get => completedChallenges; set => completedChallenges = value; }
+        public int Points { get => points; set => points = value; }
     }
 }

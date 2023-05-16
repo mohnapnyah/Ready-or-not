@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Подтверждение выбора" Height="250" Width="350">
     <Grid>
-        <WrapPanel HorizontalAlignment="Center" Margin="0,93,0,93" Width="172">
+        <WrapPanel HorizontalAlignment="Center" Margin="0,117,0,74" Width="130">
             <Button IsDefault="True" Click="Accept_Click" MinWidth="60" Margin="0,0,10,0">Да</Button>
-            <Button IsCancel="True" MinWidth="60">Нет</Button>
+            <Button IsCancel="True" MinWidth="60" Background="Maroon">Нет</Button>
         </WrapPanel>
-        <TextBlock x:Name="ConfirmBlock" HorizontalAlignment="Center" Margin="0,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Text="Ты выбираешь этот челендж?" Height="33"/>
+        <TextBlock Style="{StaticResource CustomText}" x:Name="ConfirmBlock" HorizontalAlignment="Center" Margin="0,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Text="Ты выбираешь этот челендж?" Height="33" FontSize="20"/>
     </Grid>
 </Window>

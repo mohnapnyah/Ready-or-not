@@ -8,15 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-        <Border CornerRadius="6" BorderThickness="2" BorderBrush="#FF09DA09" Margin="282,182,282,222">
-            <TextBox x:Name="Login"  HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" VerticalAlignment="Center" Width="236" FontFamily="Comic Sans MS" />
-        </Border>
-        <TextBlock HorizontalAlignment="Center" Margin="0,149,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" Foreground="#FFFF3200" Width="54" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,208,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFF3200" FontStyle="Italic"/>
-        <Border CornerRadius="6" BorderThickness="2" BorderBrush="#FF09DA09" Margin="282,237,282,172">
-            <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="236" Height="25" FontFamily="Comic Sans MS"/>
-        </Border>
-        <Button x:Name="RegistrationButton"  Content="Sign Up" HorizontalAlignment="Left" Margin="285,267,0,0" VerticalAlignment="Top" Click="RegistrationButton_Click" Foreground="Black" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="16">
+
+        <TextBox BorderThickness="3" x:Name="Login"  HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" FontFamily="Comic Sans MS" Margin="0,194,0,0" BorderBrush="#FF96FF00" />
+
+        <TextBlock HorizontalAlignment="Center" Margin="0,161,0,0" TextWrapping="Wrap" Text="Login"  VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" Foreground="#FFFF3200" Width="54" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,224,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFF3200" FontStyle="Italic"/>
+
+        <PasswordBox BorderThickness="3" x:Name="PasswordBox" HorizontalAlignment="Center" VerticalAlignment="Top" Width="236" Height="25" FontFamily="Comic Sans MS" Margin="0,257,0,0" BorderBrush="#FF96FF00"/>
+
+        <Button x:Name="RegistrationButton"  Content="Sign Up" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="RegistrationButton_Click" Foreground="Black" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="16" Margin="282,310,0,0">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF96FF00" Offset="0.561"/>
@@ -25,7 +25,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="SignIn" Content="Sign In" HorizontalAlignment="Left" Margin="448,267,0,0" VerticalAlignment="Top" Click="SignIn_Click" RenderTransformOrigin="0.209,5.769" FontSize="16" FontWeight="Bold" FontFamily="Comic Sans MS">
+        <Button x:Name="SignIn" Content="Sign In" HorizontalAlignment="Left" Margin="458,310,0,0" VerticalAlignment="Top" Click="SignIn_Click" RenderTransformOrigin="0.209,5.769" FontSize="16" FontWeight="Bold" FontFamily="Comic Sans MS">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFFF3200" Offset="0"/>
@@ -34,6 +34,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Image x:Name="Slabo" Margin="284,22,284,285" Source="/logoza.ru (2).png" Stretch="Fill"/>
+        <Image x:Name="Slabo" Margin="284,34,284,273" Source="/logoza.ru (2).png" Stretch="Fill" OpacityMask="#FF96FF00"/>
     </Grid>
 </Window>

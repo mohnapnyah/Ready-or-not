@@ -9,8 +9,8 @@
     <Grid>
         <WrapPanel HorizontalAlignment="Center" Margin="0,103,0,83" Width="130">
             <Button IsDefault="True" Click="Accept_Click" MinWidth="60" Margin="0,0,10,0">Да</Button>
-            <Button IsCancel="True" MinWidth="60">Нет</Button>
+            <Button IsCancel="True" MinWidth="60" Background="#FF801200">Нет</Button>
         </WrapPanel>
-        <TextBlock x:Name="ConfirmBlock" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Text="Ты выбираешь этот челендж?" Height="33"/>
+        <TextBlock  Style="{StaticResource CustomText}" x:Name="ConfirmBlock" HorizontalAlignment="Center" Margin="0,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Text="Ты выбираешь этот челендж?" Height="33" FontSize="12" FontWeight="Bold"/>
     </Grid>
 </Window>
