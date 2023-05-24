@@ -45,9 +45,9 @@ namespace Ready_or_not
             {
                 Challenge challenge = userChallengeList.SelectedItem as Challenge;
                 string name = (userChallengeList.SelectedItem as Challenge).Name;
-                Challenge ch = ChallengeDB.FindChallengeByName(name);
+                int a = userChallengeList.SelectedIndex;
+                currentUser.Challenges.RemoveAt(a);
                 currentUser.CompletedChallenges.Add(challenge);
-                currentUser.Challenges.Remove(ch);
                 currentUser.Points += challenge.Reward;
                 UsersDB.ReplaceUser(currentUser.Login, currentUser);
                 
