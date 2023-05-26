@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Ready_or_not
 {
-    /// <summary>
-    /// Логика взаимодействия для Profile.xaml
-    /// </summary>
     public partial class Profile : Window
     {
         public User currentUser;
@@ -50,7 +47,11 @@ namespace Ready_or_not
                 currentUser.CompletedChallenges.Add(challenge);
                 currentUser.Points += challenge.Reward;
                 UsersDB.ReplaceUser(currentUser.Login, currentUser);
-                
+                Profile newWindow = new Profile(currentUser);
+                Application.Current.MainWindow = newWindow;
+                newWindow.Show();
+                this.Close();
+
             }
         }
 

@@ -9,9 +9,9 @@
     <Grid>
         <DataGrid x:Name="CompletedList"  Margin="0,0,0,132"/>
         <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Left" Margin="10,207,0,0" TextWrapping="Wrap" Text="Твои очки: " VerticalAlignment="Top" Foreground="#FFFF3100"/>
-        <TextBlock Style="{StaticResource CustomText}" x:Name="Points" HorizontalAlignment="Left" Margin="78,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Loaded="Points_Loaded"/>
+        <TextBlock Style="{StaticResource CustomText}" x:Name="Points" HorizontalAlignment="Left" Margin="88,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Loaded="Points_Loaded"/>
         <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Left" Margin="10,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Твой ранг: "/>
-        <TextBlock Style="{StaticResource CustomText}" x:Name="Rank" HorizontalAlignment="Left" Margin="78,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Style="{StaticResource CustomText}" x:Name="Rank" HorizontalAlignment="Left" Margin="90,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
 
     </Grid>
 </Window>

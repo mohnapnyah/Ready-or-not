@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Ready_or_not
 {
-    /// <summary>
-    /// Логика взаимодействия для CompletedChallenges.xaml
-    /// </summary>
     public partial class CompletedChallenges : Window
     {
         User currentUser;

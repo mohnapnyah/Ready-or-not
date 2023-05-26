@@ -12,7 +12,7 @@
         <TextBox BorderThickness="2" x:Name="Name" HorizontalAlignment="Left" Margin="72,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" BorderBrush="#FF96FF00"/>
         <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Center" Margin="0,132,0,0" TextWrapping="Wrap" Text="Опиши его суть!" VerticalAlignment="Top" RenderTransformOrigin="0.203,0.316"/>
         <TextBox BorderThickness="2" x:Name="desc" HorizontalAlignment="Center" Margin="0,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" BorderBrush="#FF96FF00"/>
-        <TextBox BorderThickness="2" x:Name="dif" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Margin="72,197,0,0" BorderBrush="#FF96FF00"/>
+        <TextBox BorderThickness="2" x:Name="dif" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Margin="72,197,0,0" BorderBrush="#FF96FF00" />
         <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Left" Margin="58,176,0,0" TextWrapping="Wrap" Text="Какая у него сложность?" VerticalAlignment="Top" RenderTransformOrigin="0.203,0.316" Height="16" Width="168"/>
         <TextBlock Style="{StaticResource CustomText}" HorizontalAlignment="Center" Margin="0,215,0,0" TextWrapping="Wrap" Text="Награда" VerticalAlignment="Top" RenderTransformOrigin="0.203,0.316"/>
         <TextBox BorderThickness="2" x:Name="reward" HorizontalAlignment="Left" Margin="72,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" BorderBrush="#FF96FF00"/>

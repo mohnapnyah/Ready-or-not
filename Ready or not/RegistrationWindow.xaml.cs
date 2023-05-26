@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Ready_or_not
 {
-    /// <summary>
-    /// Логика взаимодействия для RegistrationWindow.xaml
-    /// </summary>
     public partial class RegistrationWindow : Window
     {
         public RegistrationWindow()
@@ -26,19 +23,27 @@ namespace Ready_or_not
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            Login.Text= string.Empty;
+            Login.Text = string.Empty;
             Password.Password = string.Empty;
-            Number.Text= string.Empty;
-            Email.Text= string.Empty;
-            Name.Text= string.Empty;
-            Surname.Text= string.Empty;
+            Number.Text = string.Empty;
+            Email.Text = string.Empty;
+            Name.Text = string.Empty;
+            Surname.Text = string.Empty;
         }
 
         private void Reg_Click(object sender, RoutedEventArgs e)
         {
-            User user = new User(Login.Text, Password.Password,Number.Text,Email.Text,Name.Text,Surname.Text);
-            UsersDB.AddUserToDataBase(user);
-            this.Close();
+            if (Login.Text != string.Empty && Password.Password != string.Empty &&
+                Number.Text != string.Empty && Email.Text != string.Empty && Name.Text != string.Empty && Surname.Text != string.Empty)
+            {
+                User user = new User(Login.Text, Password.Password, Number.Text, Email.Text, Name.Text, Surname.Text);
+                UsersDB.AddUserToDataBase(user);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Все поля должны быть заполнены!");
+            }
         }
     }
 }

@@ -26,8 +26,24 @@ namespace Ready_or_not
 
         private void send_Click(object sender, RoutedEventArgs e)
         {
-            Challenge challenge = new Challenge(Name.Text,desc.Text,int.Parse(dif.Text),int.Parse(reward.Text));
-            ChallengeDB.AddChallengeToDataBase(challenge);
+            if (Name.Text != string.Empty && desc.Text != string.Empty && dif.Text != string.Empty && reward.Text != string.Empty)
+            {
+                try
+                {
+                    Challenge challenge = new Challenge(Name.Text, desc.Text, int.Parse(dif.Text), int.Parse(reward.Text));
+                    ChallengeDB.AddChallengeToDataBase(challenge);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("В полях: сложность и награда - могут быть только числа");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Все поля должы быть заполнены!");
+            }
         }
+
+
     }
 }

@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Ready_or_not
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public User currentUser;
@@ -34,7 +31,7 @@ namespace Ready_or_not
 
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
-            if(Login.Text != null && PasswordBox.Password != null)
+            if(Login.Text != string.Empty && PasswordBox.Password != string.Empty)
             {
                 User user = UsersDB.FindUserByLogin(Login.Text);
                 if (user.Password == PasswordBox.Password)
@@ -43,6 +40,8 @@ namespace Ready_or_not
                     MessageBox.Show("Успешная авторизация");
                     var challengeList = new ChallengeList(currentUser);
                     challengeList.Show();
+                    Login.Text = string.Empty;
+                    PasswordBox.Password = string.Empty;
                     this.Close();
                 }
                 else { MessageBox.Show("Неверный пароль");}

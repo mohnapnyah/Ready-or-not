@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Ready_or_not
 {
-    /// <summary>
-    /// Логика взаимодействия для ChallengeList.xaml
-    /// </summary>
     public partial class ChallengeList : Window
     {
         public User user;
